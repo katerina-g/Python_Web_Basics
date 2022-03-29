@@ -1,2 +1,2 @@
-# Python_Web_basics
+# Python_Web_Basics SoftUni
  
