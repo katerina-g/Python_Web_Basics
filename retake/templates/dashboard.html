@@ -1,4 +1,4 @@
-{% extends 'home-page.html' %}
+{% extends 'base.html' %}
 {% block page_content %}
 
     {% if not games %}
@@ -7,7 +7,7 @@
     {% else %}
     <section id="welcome-world">
 
-    {% for game in games %}
+        {% for game in games %}
         <div class="game">
             <div class="image-wrap">
                 <!-- game image -->
@@ -23,7 +23,7 @@
                 <a href="{% url 'game details' game.pk %}" class="btn details-btn">Details</a>
             </div>
         </div>
-    {% endfor %}
+        {% endfor %}
     </section>
     {% endif %}
 {% endblock %}

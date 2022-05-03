@@ -1,4 +1,4 @@
-{% extends 'home-page.html' %}
+{% extends 'base.html' %}
 {% block page_content %}
 
     <!-- edit profile section -->
@@ -8,6 +8,7 @@
             <div class="container">
                 <!-- Edit Profile paragraph -->
                 <h1>Edit Profile</h1>
+
                 {{ form }}
                 {% csrf_token %}
                 <!-- edit profile button -->
@@ -15,5 +16,4 @@
             </div>
         </form>
     </section>
-
 {% endblock %}

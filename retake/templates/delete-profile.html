@@ -1,4 +1,4 @@
-{% extends 'home-page.html' %}
+{% extends 'base.html' %}
 {% block page_content %}
 
 <section id="create-page" class="auth">
@@ -9,10 +9,12 @@
         <form method="POST" id='delete'>
             {{ form }}
             {% csrf_token %}
+            <!-- confirm button -->
             <input class="btn submit" type="submit" value="Delete">
         </form>
         <!-- end delete profile form -->
 
     </div>
 </section>
+
 {% endblock %}
